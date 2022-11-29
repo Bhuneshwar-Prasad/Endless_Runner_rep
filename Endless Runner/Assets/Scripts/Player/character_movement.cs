@@ -5,7 +5,10 @@ public class character_movement : MonoBehaviour
     float player_speed = 3f;
     float horizontal_speed = 3.5f;
 
-    // Update is called once per frame
+    void Start()
+    {
+        FindObjectOfType<AudioManager>().Play("BGM");
+    }
     void Update()
     {
         transform.Translate(Vector3.forward * player_speed * Time.deltaTime, Space.World);
