@@ -2,7 +2,7 @@
 
 public class character_movement : MonoBehaviour
 {
-    float player_speed = 3f;
+    public float player_speed = 3f;
     float horizontal_speed = 3.5f;
 
     void Start()
