@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RotateCollectables : MonoBehaviour
 {
+    public static int totalCoins = 0;
     public float rotationSpeed = 3f;
     void Update()
     {
@@ -12,6 +13,7 @@ public class RotateCollectables : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         FindObjectOfType<AudioManager>().Play("Coin_Sound");
+        totalCoins += 1;
         this.gameObject.SetActive(false);
     }
 }
