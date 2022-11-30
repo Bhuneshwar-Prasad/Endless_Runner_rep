@@ -23,15 +23,24 @@ public class UI_Texts : MonoBehaviour
     IEnumerator CountSequence()
     {
         countdown[4].SetActive(true);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.4f);
+
+        FindObjectOfType<AudioManager>().Play("3");
         countdown[0].SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.4f);
+
+        FindObjectOfType<AudioManager>().Play("2");
         countdown[1].SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.4f);
+
+        FindObjectOfType<AudioManager>().Play("1");
         countdown[2].SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.4f);
+
+        FindObjectOfType<AudioManager>().Play("GO");
         countdown[3].SetActive(true);
-        yield return new WaitForSeconds(1f);
+        character_movement.ready = true;
+        yield return new WaitForSeconds(2f);
 
         foreach (GameObject item in countdown) {
             item.SetActive(false);

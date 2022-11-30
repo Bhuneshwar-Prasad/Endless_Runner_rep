@@ -15855,6 +15855,30 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: 3
+    clip: {fileID: 8300000, guid: a058735b84c24ad4f840478fdcde3cf5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 2
+    clip: {fileID: 8300000, guid: 43ee7db426d77684ea430e287a620370, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 1
+    clip: {fileID: 8300000, guid: 7367ca336bf9bb94d8a6100d0b8fd396, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GO
+    clip: {fileID: 8300000, guid: 7837eb9efeb47e5479b53cc3115a7340, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!1001 &1041991673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34480,6 +34504,7 @@ GameObject:
   - component: {fileID: 2088474774}
   - component: {fileID: 2088474773}
   - component: {fileID: 2088474772}
+  - component: {fileID: 2088474776}
   m_Layer: 0
   m_Name: BigRock01
   m_TagString: Untagged
@@ -34495,7 +34520,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088474771}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -34562,6 +34587,18 @@ Transform:
   m_Father: {fileID: 1115802969}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2088474776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088474771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7487b0a410f8eed4c82fdcbee46266b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2090272752
 PrefabInstance:
   m_ObjectHideFlags: 0
